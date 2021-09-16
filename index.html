@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        My Supersite!
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="loggedin?.js"></script>
+    <script>
+        if (!sessionStorage.getItem("user")) {
+            window.location = 'signup.html';
+        } else if (!loggedin) {
+            window.location = 'login.html';
+        }
+    </script>
+    <h1>Welcome to my site!</h1>
+    <h2>Click on the below buttons to go to other pages.</h2>
+    <h2>And most importantly, have a good time!</h2>
+    <iframe title="Calculator"></iframe>
+    <input type="button" value="To-Do List" onclick="location.href='Apps/todolist.html'" />
+    <input type="button" value="Music Player" onclick="location.href='Apps/music.html'" />
+    <br>
+    <br>
+    <input type="button" value="The Game Hub" onclick="location.href='gamehub.html'">
+    <br>
+    <h2>This site and all linked sites were made by Om Reddy M</h2>
+</body>
+
+</html>

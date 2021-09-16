@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        A Humble Calculator
+    </title>
+    <link rel="stylesheet" href="apporgamestyle.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="script1.js"></script>
+    <input type="button" value="Return" onclick="location.href='../index.html'" />
+    <h1>Calculator</h1>
+    <h2>Arithmetic Calculator</h2>
+    <div>
+        The first number
+        <input type="number" id="num1">
+    </div>
+    <br>
+    <div>
+        The second number
+        <input type="number" id="num2">
+    </div>
+    <br>
+    <button onclick="add()">Add these numbers</button>
+    <button onclick="sub()">Subtract number 2 from 1</button>
+    <br><br>
+    <button onclick="times()">Multiply these numbers</button>
+    <button onclick="by()">Divide number 1 by number 2</button>
+    <br><br>
+    <h2>Complex Calculations</h2>
+    <button onclick="tothepowerof()">Raise number 1 to the power of number 2</button>
+    <button onclick="rootof()">Reduce number 1 to the (number 2)th root.</button>
+    <p>Quick notes:<br>Don't set number 1 to a negative when using root as NaN will be the result.<br>Also, sometimes
+        the result will be slightly different from the actual answer with the root.</p>
+    <h2>Constants</h2>
+    <button onclick="showπ()">Display π</button>
+    <button onclick="show_e()">Display e</button>
+    <button onclick="show_phi()">Display phi</button>
+    <script type="text/javascript" src="datatransfer.json"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+</body>
+
+</html>

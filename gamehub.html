@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Game Hub
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="gamehub.js"></script>
+    <input type="button" value="Return" onclick="location.href='index.html'" />
+    <h1>Welcome to the Game Hub!</h1>
+    <h2>Enjoy the games!</h2>
+    <span>
+        <div>
+        <iframe src="Games/memory game.html" title="Memory Game" height="450" width="450" id="MGframe"></iframe>
+        <br>
+        <button onclick="reloadMG()">Reset Memory Game</button>
+        </div>
+        <br>
+        <div>
+        <iframe src="Games/frogger.html" title="Frogger" height="450" width="450" id="Frframe"></iframe>
+        <br>
+        <button onclick="reloadFr()">Reset Frogger</button>
+        </div>
+    </span>
+</body>
+
+</html>
